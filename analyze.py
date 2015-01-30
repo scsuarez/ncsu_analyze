@@ -3,6 +3,8 @@ import sys
 from matplotlib import pyplot as plt
 
 def analyze(filename,outputfile):
+    '''This is a function to plot average, max and min of a data set 
+across rows for each column'''
     data = np.loadtxt(fname=filename, delimiter=',')
     
     plt.figure(figsize=(10.0, 3.0))
